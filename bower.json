@@ -1,0 +1,12 @@
+{
+  "name": "openui5-sample-workOrder-app",
+  "description": "Sample app for showing booking of work order with reusable promise chains",
+  "private": false,
+  "dependencies": {
+    "openui5-sap.ui.core": "openui5/packaged-sap.ui.core",
+    "openui5-sap.m": "openui5/packaged-sap.m",
+    "openui5-sap.f": "openui5/sap.ui.commons",
+    "openui5-sap.ui.layout": "openui5/packaged-sap.ui.layout",
+    "openui5-themelib_sap_belize": "openui5/packaged-themelib_sap_belize"
+  }
+}

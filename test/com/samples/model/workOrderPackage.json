@@ -1,0 +1,124 @@
+{
+	"tasks": [
+		{
+			"id": 1,
+			"name": "Relocate dish connection",
+			"inputNeeded": [
+				{
+					"name": "fromAddress",
+					"type": "com.demo.workOrder.controls.AddressInput",
+					"label": "Address to move from"
+				},
+				{
+					"name": "toAddress",
+					"type": "com.demo.workOrder.controls.AddressInput",
+					"label": "Address to move to"
+				}
+			],
+			"subtasks": [
+				{
+					"id": 3,
+					"time": 1,
+					"mandatory": false,
+					"inputFields": [
+						"toAddress"
+					]
+				},
+				{
+					"id": 4,
+					"time": 1,
+					"mandatory": true,
+					"inputFields": [
+						"toAddress"
+					]
+				},
+				{
+					"id": 5,
+					"time": 1,
+					"mandatory": false,
+					"inputFields": [
+						"toAddress"
+					]
+				}
+			]
+		},
+		{
+			"id": 2,
+			"name": "Plumbing",
+			"inputNeeded": [
+				{
+					"name": "serviceAddress",
+					"type": "com.demo.workOrder.controls.AddressInput",
+					"label": "Address"
+				}
+			]
+		},
+		{
+			"id": 3,
+			"name": "Electrical",
+			"inputNeeded": [
+				{
+					"name": "serviceAddress",
+					"type": "com.demo.workOrder.controls.AddressInput",
+					"label": "Address"
+				}
+			]
+		},
+		{
+			"id": 4,
+			"name": "Cable service",
+			"inputNeeded": [
+				{
+					"name": "serviceAddress",
+					"type": "com.demo.workOrder.controls.AddressInput",
+					"label": "Address"
+				}
+			]
+		},
+		{
+			"id": 5,
+			"name": "TV Repairs",
+			"inputNeeded": [
+				{
+					"name": "serviceAddress",
+					"type": "com.demo.workOrder.controls.AddressInput",
+					"label": "Address"
+				}
+			]
+		}
+	],
+	"technicians": [
+		{
+			"id": 1,
+			"tasks": [
+				2,
+				3,
+				4
+			],
+			"name": "Ganesh",
+			"description": "A technician with expertise in electrical, plumbing and cable services",
+			"isFavourite": true,
+			"appointments":[]
+		},
+		{
+			"id": 2,
+			"tasks": [
+				5
+			],
+			"name": "Bikesh",
+			"description": "A technician with expertise in repair of Tv, AC, Fridge, Microwave, Water Filter and other kitchen appliances.",
+			"isFavourite": false,
+			"appointments":[]
+		},
+		{
+			"id": 3,
+			"tasks": [
+				1
+			],
+			"name": "Rakesh",
+			"description": "Cable moving technician, he can check feasilblity testing to moving location. Do necessary logistics for the movement of cable connection",
+			"isFavourite": false,
+			"appointments":[]
+		}
+	]
+}

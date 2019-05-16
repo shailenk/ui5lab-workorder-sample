@@ -1,0 +1,27 @@
+{
+  "com.samples": {
+    "icon": "sap-icon://activate",
+    "name": "openui5-sample-workOrder-app",
+    "description": "Sample app for showing booking of work order with reusable promise chains",
+    "source" : "https://github.com/shailenk/ui5lab-workorder-sample.git",
+    "documentation": "https://github.com/shailenk/ui5lab-workorder-sample/blob/master/README.md",
+    "license": "MIT",
+    "version": 1.0,
+    "content": {
+      "SampleWorkOrder": {
+        "id": "SampleWorkOrder",
+        "name": "OpenUI5 sample for reusable work order flows",
+        "type": "control",
+        "version": 1.0,
+        "description": "Sample app for showing booking of work order with reusable promise chains",
+        "samples": [
+          {
+            "id": "SampleWorkOrder",
+            "name": "OpenUI5 sample for reusable work order flows",
+            "description": "Sample app for showing booking of work order with reusable promise chains"
+          }
+        ]
+      }
+    }
+  }
+}

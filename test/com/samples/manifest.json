@@ -1,0 +1,37 @@
+{
+    "_version": "1.0",
+    "sap.app": {
+        "id": "SampleWorkOrder",
+        "type": "library"
+    },
+    "sap.ui5": {
+        "dependencies": {
+            "minUI5Version": "1.60.0",
+            "libs": {
+				"sap.ui.layout": {},
+                "sap.ui.core": {},
+				"sap.ui.commons": {},
+                "sap.m": {},
+                "com.demo.workOrder": {}
+            }
+        },
+        "rootView": {
+            "viewName": "com.samples.view.App",
+            "type": "JS",
+            "async": true,
+            "id": "app"
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName": "com.samples.i18n.i18n"
+                }
+            },
+            "": {
+                "type": "sap.ui.model.json.JSONModel",
+                "uri": "model/workOrderPackage.json"
+            }
+        }
+    }
+}
